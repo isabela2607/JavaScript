@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Query</title>
+    
+    <style>
+        .paragrafo-estilo {
+            color: blue;
+            font-size: 18px;
+        }
+        .lista-estilo {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-principal">Título Alterado!</h1>
+        <nav>
+            <ul>
+                <li class="menu-item">Início</li>
+                <li class="menu-item">Sobre</li>
+                <li class="menu-item">Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="secao-principal">
+            <h2>Seção Principal</h2>
+            <p class="paragrafo">Este é o primeiro paragrafo da seção principal</p>
+            <p class="paragrafo">Outro paragrafo</p>
+            <button id="meu-botao">Texto Alterado do Botão</button>
+        </section>
+
+    </main>
+
+    <script>
+        // Mudar o texto do título
+        document.getElementById('titulo-principal').innerText = 'Título Alterado!';
+
+        // Estilo dos itens da lista alterado
+        let listaItems = document.querySelectorAll('nav .menu-item');
+        listaItems.forEach(item => {
+            item.classList.add('lista-estilo');
+        });
+
+        // Classe a todos os parágrafos
+        let paragrafos = document.querySelectorAll('.paragrafo');
+        paragrafos.forEach(paragrafo => {
+            paragrafo.classList.add('paragrafo-estilo');
+        });
+
+        //Texto do botão alterado
+        document.getElementById('meu-botao').innerText = 'Texto Alterado do Botão';
+    </script>
+</body>
+</html>
