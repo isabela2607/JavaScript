@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Usuários no GitHub</title>
+    <style>
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#container-busca {
+    margin-bottom: 20px;
+}
+
+#campo-busca {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#botao-buscar {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#resultados {
+    margin-top: 30px;
+}
+
+.item-usuario {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.item-usuario a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sem-resultados {
+    font-size: 1.2rem;
+    color: red;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>Busca de Usuários no GitHub</h1>
+    
+    <!-- Campo de busca -->
+    <div id="container-busca">
+        <input type="text" id="campo-busca" placeholder="Digite o nome do usuário">
+        <button id="botao-buscar">Buscar</button>
+    </div>
+
+    <!-- Resultados da busca -->
+    <div id="resultados"></div>
+
+    <script src="atividade3.js"></script>
+</body>
+</html>
