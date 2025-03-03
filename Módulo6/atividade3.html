@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        #tarefa-lista {
+            margin-top: 30px;
+        }
+
+        .tarefa {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .descricao {
+            margin-left: 10px;
+        }
+
+        .concluida {
+            text-decoration: line-through;
+            color: green;
+        }
+
+        .nao-concluida {
+            color: red;
+        }
+
+        #campo-tarefa {
+            padding: 15px;
+            margin-right:10px;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        #adicionar-btn {
+            padding: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Campo para adicionar tarefas -->
+    <input type="text" id="campo-tarefa" placeholder="Descrição da nova tarefa">
+    <button id="adicionar-btn">Adicionar</button>
+
+    <div id="tarefa-lista"></div>
+
+    <script src="atividade3.js"></script>
+</body>
+</html>
